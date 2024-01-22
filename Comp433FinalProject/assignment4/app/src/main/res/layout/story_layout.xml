@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@drawable/animal_crossing_fall">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:orientation="horizontal"
+        tools:context=".MainActivity">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="76dp"
+            android:layout_gravity="center"
+            android:layout_margin="10pt"
+            android:onClick="findPhoto"
+            android:text="Find"
+            android:textSize="15pt" />
+
+        <EditText
+            android:id="@+id/findText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:hint="Enter text"
+            android:inputType="text"></EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:orientation="horizontal"
+        tools:context=".MainActivity">
+
+        <CheckBox
+            android:id="@+id/checkbox_sketches"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:text="Include Sketches"
+            android:textAlignment="center"
+            android:checked="true"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/mylist"
+        android:layout_width="match_parent"
+        android:layout_height="271dp"></ListView>
+
+    <TextView
+        android:id="@+id/selectedView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:text=""
+        android:textAlignment="center"
+        android:textSize="50px">
+    </TextView>
+
+    <TextView
+        android:id="@+id/storyView"
+        android:layout_width="match_parent"
+        android:layout_height="292dp"
+        android:layout_gravity="center"
+        android:text=""
+        android:textAlignment="center"
+        android:textSize="60px"></TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:orientation="horizontal"
+        tools:context=".MainActivity">
+
+        <Button
+            android:layout_width="157dp"
+            android:layout_height="88dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:onClick="CreateStory"
+            android:text="Story"
+            android:textSize="15pt" />
+
+        <Button
+            android:layout_width="161dp"
+            android:layout_height="82dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25pt"
+            android:onClick="goBack"
+            android:text="Back"
+            android:textSize="15pt" />
+
+    </LinearLayout>
+
+</LinearLayout>

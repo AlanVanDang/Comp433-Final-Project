@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@drawable/animal_crossing">
+
+
+    <com.example.assignment4.MyDrawingArea
+        android:id="@+id/customView"
+        android:layout_width="match_parent"
+        android:layout_height="180dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:context=".MainActivity">
+
+        <Button
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:onClick="getTags"
+            android:text="Tags:"
+            android:textSize="100px"></Button>
+
+        <EditText
+            android:id="@+id/tags"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="16dp"
+            android:hint="Enter text"
+            android:inputType="text"></EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="103dp"
+        android:orientation="horizontal"
+        tools:context=".MainActivity">
+
+        <Button
+            android:layout_width="157dp"
+            android:layout_height="88dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:onClick="resetPhoto"
+            android:text="Clear"
+            android:textSize="15pt" />
+
+        <Button
+            android:layout_width="161dp"
+            android:layout_height="82dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25pt"
+            android:onClick="submitPhoto"
+            android:text="Save"
+            android:textSize="15pt" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:orientation="horizontal"
+        tools:context=".MainActivity">
+
+        <Button
+            android:layout_width="166dp"
+            android:layout_height="86dp"
+            android:layout_gravity="center"
+            android:layout_margin="10pt"
+            android:onClick="findPhoto"
+            android:text="Find"
+            android:textSize="15pt" />
+
+        <EditText
+            android:id="@+id/findText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:hint="Enter text"
+            android:inputType="text"></EditText>
+
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:context=".MainActivity">
+
+        <Button
+            android:id="@+id/colorPickerButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Select Color"
+            android:onClick="showColorPickerDialog"
+            android:layout_margin="10dp"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/strokeSizeButton"
+            android:layout_width="136dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:onClick="showStrokeSizePickerDialog"
+            android:text="Select Stroke Size" />
+
+        <Button
+            android:id="@+id/goBack"
+            android:layout_width="114dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:onClick="goBack"
+            android:text="Go Back" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/mylist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout>
