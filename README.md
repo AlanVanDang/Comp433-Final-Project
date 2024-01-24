@@ -5,5 +5,7 @@ An extra thing I didn't have to do but did for bonus points was made it so when 
 
 This class was cool because we actually made a functional app and was taught how to use APIs. To make the app look nicer, I made mine Animal Crossing themed.
 
+If you want to run the app, you have to download Android Studio, extract the zip file, and open it using Android Studio.
+
 Demo Video of the app:
 https://youtu.be/_uB6gpJ2pTA
